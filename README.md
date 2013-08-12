@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cubicdaiya/ngxmodgen.png?branch=travis)](https://travis-ci.org/cubicdaiya/ngxmodgen)
+
 # ngxmodgen
 
 ngxmodgen is the code generator for a nginx module
