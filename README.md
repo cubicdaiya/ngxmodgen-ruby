@@ -21,9 +21,9 @@ Or install it yourself as:
 ## Usage
 
     $ NGINX_MODULE_NAME=hoge
-    $ ngxcodegen -n $NGINX_MODULE_NAME                # generate ngx_http_hoge_module.c and config
-    $ ngxcodegen -n $NGINX_MODULE_NAME -t http        # generate ngx_http_hoge_module.c and config
-    $ ngxcodegen -n $NGINX_MODULE_NAME -t http_filter # generate ngx_http_hoge_filter_module.c and config
+    $ ngxmodgen -n $NGINX_MODULE_NAME                # generate ngx_http_hoge_module.c and config
+    $ ngxmodgen -n $NGINX_MODULE_NAME -t http        # generate ngx_http_hoge_module.c and config
+    $ ngxmodgen -n $NGINX_MODULE_NAME -t http_filter # generate ngx_http_hoge_filter_module.c and config
 
 ## Contributing
 
