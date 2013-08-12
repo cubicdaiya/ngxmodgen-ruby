@@ -1,9 +1,8 @@
-require "minitest/unit"
 require "minitest/autorun"
 require "ngxmodgen/configgen"
 require "ngxmodgen/srcgen"
 
-class TestNgxmodgen < MiniTest::Unit::TestCase
+class TestNgxmodgen < MiniTest::Test
   def setup
     @module_name = "hoge"
     @config_gen  = NginxModuleConfigGenerator.new(@module_name)
