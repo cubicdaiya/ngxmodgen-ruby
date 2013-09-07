@@ -66,6 +66,20 @@ EOS
 
 static ngx_int_t ngx_http_#{@module_name}_filter_init(ngx_conf_t *cf);
 
+static ngx_command_t ngx_http_#{@module_name}_commands[] = {
+    /*
+    {
+        ngx_string("command_name"),
+        NGX_HTTP_LOC_CONF|NGX_CONF_NOARGS,
+        NULL,
+        0,
+        0,
+        NULL
+    },
+    */
+    ngx_null_command
+};
+
 static ngx_http_module_t  ngx_http_#{@module_name}_filter_module_ctx = {
     NULL,                                  /* preconfiguration */
     ngx_http_#{@module_name}_filter_init,  /* postconfiguration */
@@ -83,7 +97,7 @@ static ngx_http_module_t  ngx_http_#{@module_name}_filter_module_ctx = {
 ngx_module_t  ngx_http_#{@module_name}_filter_module = {
     NGX_MODULE_V1,
     &ngx_http_#{@module_name}_filter_module_ctx, /* module context */
-    NULL,                                        /* module directives */
+    ngx_http_#{@module_name}_commands,           /* module directives */
     NGX_HTTP_MODULE,                             /* module type */
     NULL,                                        /* init master */
     NULL,                                        /* init module */
