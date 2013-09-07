@@ -1,3 +1,9 @@
+2011-08-13 Tatsuhiko Kubo <cubicdaiya@gmail.com>
+
+	* includes default directive definitions for filter module
+
+	* 0.0.3 released
+
 2011-08-12 Tatsuhiko Kubo <cubicdaiya@gmail.com>
 
 	* add test
