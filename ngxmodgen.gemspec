@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["cubicdaiya@gmail.com"]
   spec.description   = %q{Nginx Module Generator}
   spec.summary       = %q{Nginx Module Generator}
-  spec.homepage      = "https://github.com/cubicdaiya/ngxmodgen"
+  spec.homepage      = "https://github.com/cubicdaiya/ngxmodgen-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
